@@ -1,0 +1,32 @@
+interval_number,t0_state_number,t1_state_number,t0_timestamp_utc,t1_timestamp_utc,observation_gap_hours,t1_new_viirs_detections,new_area_km2,exact_duplicate_geometry,no_geometric_growth,meaningful_geometric_growth_at_1km_support,long_observation_gap_over_18h,geometry_compromised,primary_interval_set,required_no_early_phase_sensitivity,uncertain_early_phase,primary_exclusion_reason,forecast_cycle_initialized_at_t0_available,forecast_leads_f00_f12_complete
+1,1,2,2020-09-08T00:00:00Z,2020-09-08T12:00:00Z,11.4,30,5.489867949465654,False,False,True,False,False,True,False,True,,True,True
+2,2,3,2020-09-08T12:00:00Z,2020-09-09T00:00:00Z,12.3,42,2.694636252281672,False,False,True,False,False,False,False,False,"Failed one or more prespecified detection, growth, gap, geometry, or minimal class-support checks",False,False
+3,3,4,2020-09-09T00:00:00Z,2020-09-09T12:00:00Z,11.4,97,8.715902628201567,False,False,True,False,False,True,False,True,,True,True
+4,4,5,2020-09-09T12:00:00Z,2020-09-10T00:00:00Z,12.3,66,6.0834844928913965,False,False,True,False,False,True,True,False,,True,True
+5,5,6,2020-09-10T00:00:00Z,2020-09-10T12:00:00Z,11.4,91,6.92874233244923,False,False,True,False,False,True,True,False,,True,True
+6,6,7,2020-09-10T12:00:00Z,2020-09-11T00:00:00Z,12.3,81,5.605053619554212,False,False,True,False,False,True,True,False,,True,True
+7,7,8,2020-09-11T00:00:00Z,2020-09-11T12:00:00Z,11.4,41,2.905898306062289,False,False,True,False,False,False,False,False,"Failed one or more prespecified detection, growth, gap, geometry, or minimal class-support checks",False,False
+8,8,9,2020-09-11T12:00:00Z,2020-09-12T00:00:00Z,13.9,227,22.42880575964168,False,False,True,False,False,True,True,False,,True,True
+9,9,10,2020-09-12T00:00:00Z,2020-09-12T12:00:00Z,9.7,67,4.97066822338035,False,False,True,False,False,True,True,False,,True,True
+10,10,11,2020-09-12T12:00:00Z,2020-09-13T00:00:00Z,14.0,535,39.383855915461865,False,False,True,False,False,True,True,False,,True,True
+11,11,12,2020-09-13T00:00:00Z,2020-09-13T12:00:00Z,9.7,182,12.119347516828258,False,False,True,False,False,True,True,False,,True,True
+12,12,13,2020-09-13T12:00:00Z,2020-09-14T00:00:00Z,14.0,128,16.55966409139428,False,False,True,False,False,True,True,False,,True,True
+13,13,14,2020-09-14T00:00:00Z,2020-09-14T12:00:00Z,11.4,71,5.058291603793202,False,False,True,False,False,False,False,False,"Failed one or more prespecified detection, growth, gap, geometry, or minimal class-support checks",False,False
+14,14,15,2020-09-14T12:00:00Z,2020-09-15T00:00:00Z,12.3,127,20.54299499333584,False,False,True,False,False,True,True,False,,True,True
+15,15,16,2020-09-15T00:00:00Z,2020-09-15T12:00:00Z,11.4,147,9.764040652297888,False,False,True,False,False,True,True,False,,True,True
+16,16,17,2020-09-15T12:00:00Z,2020-09-16T00:00:00Z,12.3,127,12.521034486910873,False,False,True,False,False,True,True,False,,True,True
+17,17,18,2020-09-16T00:00:00Z,2020-09-16T12:00:00Z,11.4,85,3.101461379874393,False,False,True,False,False,False,False,False,"Failed one or more prespecified detection, growth, gap, geometry, or minimal class-support checks",False,False
+18,18,19,2020-09-16T12:00:00Z,2020-09-17T00:00:00Z,13.9,121,7.908012669049243,False,False,True,False,False,True,True,False,,True,True
+19,19,20,2020-09-17T00:00:00Z,2020-09-17T12:00:00Z,9.7,54,0.8959298870256817,False,False,False,False,False,False,False,False,"Failed one or more prespecified detection, growth, gap, geometry, or minimal class-support checks",False,False
+20,20,21,2020-09-17T12:00:00Z,2020-09-18T00:00:00Z,14.0,46,3.948452239633734,False,False,True,False,False,False,False,False,"Failed one or more prespecified detection, growth, gap, geometry, or minimal class-support checks",False,False
+21,21,22,2020-09-18T00:00:00Z,2020-09-18T12:00:00Z,9.7,64,8.85519334208619,False,False,True,False,False,True,True,False,,True,True
+22,22,23,2020-09-18T12:00:00Z,2020-09-19T00:00:00Z,14.0,36,5.796215269976006,False,False,True,False,False,True,True,False,,True,True
+23,23,24,2020-09-19T00:00:00Z,2020-09-19T12:00:00Z,11.4,7,2.618962338662989e-18,False,True,False,False,False,False,False,False,"Failed one or more prespecified detection, growth, gap, geometry, or minimal class-support checks",False,False
+24,24,25,2020-09-19T12:00:00Z,2020-09-20T00:00:00Z,12.3,22,0.0,False,True,False,False,False,False,False,False,"Failed one or more prespecified detection, growth, gap, geometry, or minimal class-support checks",False,False
+25,25,26,2020-09-20T00:00:00Z,2020-09-20T12:00:00Z,9.7,12,8.054678885677236e-20,False,True,False,False,False,False,False,False,"Failed one or more prespecified detection, growth, gap, geometry, or minimal class-support checks",False,False
+26,26,27,2020-09-20T12:00:00Z,2020-09-21T00:00:00Z,14.0,32,0.1779352948432883,False,False,False,False,False,False,False,False,"Failed one or more prespecified detection, growth, gap, geometry, or minimal class-support checks",False,False
+27,27,28,2020-09-21T00:00:00Z,2020-09-21T12:00:00Z,11.4,32,0.0,False,True,False,False,False,False,False,False,"Failed one or more prespecified detection, growth, gap, geometry, or minimal class-support checks",False,False
+28,28,29,2020-09-21T12:00:00Z,2020-09-22T00:00:00Z,12.3,20,8.404235661075341e-20,False,True,False,False,False,False,False,False,"Failed one or more prespecified detection, growth, gap, geometry, or minimal class-support checks",False,False
+29,29,30,2020-09-22T00:00:00Z,2020-09-22T12:00:00Z,0.0,0,0.0,True,True,False,False,False,False,False,False,"Failed one or more prespecified detection, growth, gap, geometry, or minimal class-support checks",False,False
+30,30,31,2020-09-22T12:00:00Z,2020-09-23T00:00:00Z,23.6,2,8.429773535028468e-21,False,True,False,True,False,False,False,False,"Failed one or more prespecified detection, growth, gap, geometry, or minimal class-support checks",False,False
+31,31,32,2020-09-23T00:00:00Z,2020-09-23T12:00:00Z,11.4,1,0.0,False,True,False,False,False,False,False,False,"Failed one or more prespecified detection, growth, gap, geometry, or minimal class-support checks",False,False

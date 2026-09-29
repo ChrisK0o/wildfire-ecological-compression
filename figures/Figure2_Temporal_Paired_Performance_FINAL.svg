@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1450 620" preserveAspectRatio="xMidYMid meet">
+<rect width="100%" height="100%" fill="white"/>
+<text x="105.0" y="62.0" font-family="Arial, Helvetica, sans-serif" font-size="24" text-anchor="start" font-weight="bold" fill="#222222">A</text>
+<line x1="105.0" y1="95.0" x2="105.0" y2="500.0" stroke="#333333" stroke-width="1.2"/>
+<line x1="105.0" y1="500.0" x2="625.0" y2="500.0" stroke="#333333" stroke-width="1.2"/>
+<line x1="99.0" y1="500.0" x2="105.0" y2="500.0" stroke="#333333"/>
+<text x="93.0" y="505.0" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="end" font-weight="normal" fill="#444444">-0.015</text>
+<line x1="99.0" y1="398.8" x2="105.0" y2="398.8" stroke="#333333"/>
+<text x="93.0" y="403.8" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="end" font-weight="normal" fill="#444444">0.004</text>
+<line x1="99.0" y1="297.5" x2="105.0" y2="297.5" stroke="#333333"/>
+<text x="93.0" y="302.5" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="end" font-weight="normal" fill="#444444">0.023</text>
+<line x1="99.0" y1="196.2" x2="105.0" y2="196.2" stroke="#333333"/>
+<text x="93.0" y="201.2" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="end" font-weight="normal" fill="#444444">0.042</text>
+<line x1="99.0" y1="95.0" x2="105.0" y2="95.0" stroke="#333333"/>
+<text x="93.0" y="100.0" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="end" font-weight="normal" fill="#444444">0.061</text>
+<line x1="105.0" y1="420.1" x2="625.0" y2="420.1" stroke="#3d3d3d" stroke-width="1.6"/>
+<line x1="198.6" y1="420.1" x2="198.6" y2="461.6" stroke="#0072B2" stroke-width="1.4" stroke-opacity="0.55"/>
+<line x1="365.0" y1="420.1" x2="365.0" y2="139.1" stroke="#0072B2" stroke-width="1.4" stroke-opacity="0.55"/>
+<line x1="531.4" y1="420.1" x2="531.4" y2="404.5" stroke="#0072B2" stroke-width="1.4" stroke-opacity="0.55"/>
+<circle cx="198.6" cy="461.6" r="6" fill="#0072B2"/>
+<text x="198.6" y="486.6" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" font-weight="normal" fill="#222222">-0.0078</text>
+<text x="198.6" y="529.0" font-family="Arial, Helvetica, sans-serif" font-size="16" text-anchor="middle" font-weight="bold" fill="#222222">B2</text>
+<text x="198.6" y="549.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#444444">6, 8, 9, 10</text>
+<circle cx="365.0" cy="139.1" r="6" fill="#0072B2"/>
+<text x="365.0" y="125.1" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" font-weight="normal" fill="#222222">0.0527</text>
+<text x="365.0" y="529.0" font-family="Arial, Helvetica, sans-serif" font-size="16" text-anchor="middle" font-weight="bold" fill="#222222">B3</text>
+<text x="365.0" y="549.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#444444">11, 12, 14, 15</text>
+<circle cx="531.4" cy="404.5" r="6" fill="#0072B2"/>
+<text x="531.4" y="390.5" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" font-weight="normal" fill="#222222">0.0029</text>
+<text x="531.4" y="529.0" font-family="Arial, Helvetica, sans-serif" font-size="16" text-anchor="middle" font-weight="bold" fill="#222222">B4</text>
+<text x="531.4" y="549.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#444444">16, 18, 21, 22</text>
+<text x="26.0" y="297.5" font-family="Arial, Helvetica, sans-serif" font-size="17" text-anchor="middle" font-weight="normal" fill="#222222" transform="rotate(-90 26.0 297.5)">Log-loss benefit</text>
+<text x="365.0" y="583.0" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" font-weight="normal" fill="#222222">Evaluation block (retained interval numbers)</text>
+<text x="617.0" y="117.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="end" font-weight="normal" fill="#555555">EVT lower loss</text>
+<text x="617.0" y="490.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="end" font-weight="normal" fill="#555555">Baseline lower loss</text>
+<text x="810.0" y="62.0" font-family="Arial, Helvetica, sans-serif" font-size="24" text-anchor="start" font-weight="bold" fill="#222222">B</text>
+<line x1="810.0" y1="95.0" x2="810.0" y2="500.0" stroke="#333333" stroke-width="1.2"/>
+<line x1="810.0" y1="500.0" x2="1330.0" y2="500.0" stroke="#333333" stroke-width="1.2"/>
+<line x1="804.0" y1="500.0" x2="810.0" y2="500.0" stroke="#333333"/>
+<text x="798.0" y="505.0" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="end" font-weight="normal" fill="#444444">-0.004</text>
+<line x1="804.0" y1="398.8" x2="810.0" y2="398.8" stroke="#333333"/>
+<text x="798.0" y="403.8" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="end" font-weight="normal" fill="#444444">0.002</text>
+<line x1="804.0" y1="297.5" x2="810.0" y2="297.5" stroke="#333333"/>
+<text x="798.0" y="302.5" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="end" font-weight="normal" fill="#444444">0.007</text>
+<line x1="804.0" y1="196.2" x2="810.0" y2="196.2" stroke="#333333"/>
+<text x="798.0" y="201.2" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="end" font-weight="normal" fill="#444444">0.013</text>
+<line x1="804.0" y1="95.0" x2="810.0" y2="95.0" stroke="#333333"/>
+<text x="798.0" y="100.0" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="end" font-weight="normal" fill="#444444">0.018</text>
+<line x1="810.0" y1="434.1" x2="1330.0" y2="434.1" stroke="#3d3d3d" stroke-width="1.6"/>
+<line x1="903.6" y1="434.1" x2="903.6" y2="445.4" stroke="#0072B2" stroke-width="1.4" stroke-opacity="0.55"/>
+<line x1="1070.0" y1="434.1" x2="1070.0" y2="151.7" stroke="#0072B2" stroke-width="1.4" stroke-opacity="0.55"/>
+<line x1="1236.4" y1="434.1" x2="1236.4" y2="414.8" stroke="#0072B2" stroke-width="1.4" stroke-opacity="0.55"/>
+<circle cx="903.6" cy="445.4" r="6" fill="#0072B2"/>
+<text x="903.6" y="470.4" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" font-weight="normal" fill="#222222">-0.0006</text>
+<text x="903.6" y="529.0" font-family="Arial, Helvetica, sans-serif" font-size="16" text-anchor="middle" font-weight="bold" fill="#222222">B2</text>
+<text x="903.6" y="549.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#444444">6, 8, 9, 10</text>
+<circle cx="1070.0" cy="151.7" r="6" fill="#0072B2"/>
+<text x="1070.0" y="137.7" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" font-weight="normal" fill="#222222">0.0150</text>
+<text x="1070.0" y="529.0" font-family="Arial, Helvetica, sans-serif" font-size="16" text-anchor="middle" font-weight="bold" fill="#222222">B3</text>
+<text x="1070.0" y="549.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#444444">11, 12, 14, 15</text>
+<circle cx="1236.4" cy="414.8" r="6" fill="#0072B2"/>
+<text x="1236.4" y="400.8" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" font-weight="normal" fill="#222222">0.0010</text>
+<text x="1236.4" y="529.0" font-family="Arial, Helvetica, sans-serif" font-size="16" text-anchor="middle" font-weight="bold" fill="#222222">B4</text>
+<text x="1236.4" y="549.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#444444">16, 18, 21, 22</text>
+<text x="731.0" y="297.5" font-family="Arial, Helvetica, sans-serif" font-size="17" text-anchor="middle" font-weight="normal" fill="#222222" transform="rotate(-90 731.0 297.5)">Brier-score benefit</text>
+<text x="1070.0" y="583.0" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle" font-weight="normal" fill="#222222">Evaluation block (retained interval numbers)</text>
+<text x="1322.0" y="117.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="end" font-weight="normal" fill="#555555">EVT lower loss</text>
+<text x="1322.0" y="490.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="end" font-weight="normal" fill="#555555">Baseline lower loss</text>
+</svg>

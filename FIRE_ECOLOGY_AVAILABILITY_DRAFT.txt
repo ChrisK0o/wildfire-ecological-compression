@@ -1,0 +1,18 @@
+Availability of data and materials
+
+The code, frozen derived analysis tables, machine-readable results, publication tables, figure source records, and checksums supporting this study will be available at [PUBLIC REPOSITORY] under [PERSISTENT IDENTIFIER]. The archived code version will be identified by [CODE ARCHIVE IDENTIFIER]. Original research code is licensed under the MIT License. Original derived data, original documentation, and original research-compendium materials for which the authors can grant a license are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
+
+Raw third-party source products are not redistributed and are not covered by the project's MIT or CC BY 4.0 grants. FEDS data are available from Zenodo record 15261836 (https://doi.org/10.5281/zenodo.15261836); USGS 3DEP and LANDFIRE data are available from USGS; and archived HRRR forecasts are available from the NOAA Open Data archive. Exact product identities, source URLs, retained checksums, and provenance limitations are documented in SOURCE_DATA.md. Third-party materials remain governed by their respective providers' terms.
+
+AUTHORS=Christopher Ko; Hannah Ko
+PROJECT_NAME=Ecological compression of vegetation information in wildfire spread prediction
+PROJECT_HOME_PAGE=[PUBLIC REPOSITORY]
+PERSISTENT_IDENTIFIER=[PERSISTENT IDENTIFIER]
+ARCHIVED_VERSION=[CODE ARCHIVE IDENTIFIER]
+OPERATING_SYSTEMS=Windows 11 (authenticated execution environment)
+PROGRAMMING_LANGUAGE=Python 3.12.13
+OTHER_REQUIREMENTS=Public source datasets listed in SOURCE_DATA.md; package versions listed in ENVIRONMENT.md
+LICENSE=MIT for original research code
+DERIVED_DATA_DOCUMENTATION_LICENSE=CC BY 4.0
+THIRD_PARTY_SOURCE_DATA=Not redistributed; provider terms apply
+NONACADEMIC_RESTRICTIONS=No additional restrictions on original code under MIT or original derived data/documentation under CC BY 4.0; third-party provider terms apply

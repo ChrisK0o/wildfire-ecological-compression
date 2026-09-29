@@ -1,0 +1,30 @@
+raw_column,scientific_block,model_role,logistic_representation,random_forest_representation,required_in_primary_table
+distance_active_front_km,FEDS state,baseline,standardized continuous,raw continuous,TRUE
+distance_cumulative_perimeter_km,FEDS state,baseline,standardized continuous,raw continuous,TRUE
+hybrid_membership,FEDS state,baseline,"three indicators with BOTH as reference: hybrid_ACTIVE_ONLY; hybrid_PERIMETER_BACKSTOP_ONLY; hybrid_NEITHER_PRIMARY_COMPONENT","four fixed one-hot indicators for BOTH; ACTIVE_ONLY; PERIMETER_BACKSTOP_ONLY; NEITHER_PRIMARY_COMPONENT with no dropped level",TRUE
+log1p_t0_area_km2,FEDS state,baseline,standardized continuous,raw continuous,TRUE
+target_elevation_mean_m,Terrain,baseline,standardized continuous,raw continuous,TRUE
+target_slope_mean_degrees,Terrain,baseline,standardized continuous,raw continuous,TRUE
+source_target_elevation_difference_m,Terrain,baseline,standardized continuous,raw continuous,TRUE
+uphill_alignment,Terrain,baseline,standardized continuous,raw continuous,TRUE
+wind_slope_alignment,Terrain,baseline,standardized continuous,raw continuous,TRUE
+fbfm_grass_grass_shrub_fraction,FBFM40,baseline,standardized composition coordinate,raw fraction,TRUE
+fbfm_shrub_fraction,FBFM40,baseline,standardized composition coordinate,raw fraction,TRUE
+fbfm_timber_fraction,FBFM40,baseline,standardized composition coordinate,raw fraction,TRUE
+fbfm_slash_blowdown_fraction,FBFM40,baseline,standardized composition coordinate,raw fraction,TRUE
+fbfm_nonburnable_fraction,FBFM40,baseline,omitted fixed reference part,raw fraction,TRUE
+canopy_applicable_fraction,Canopy,baseline,standardized continuous fraction,raw fraction,TRUE
+conditional_mean_canopy_cover_pct,Canopy,baseline,standardized continuous,raw continuous,TRUE
+conditional_mean_canopy_height_m,Canopy,baseline,standardized continuous,raw continuous,TRUE
+conditional_mean_canopy_base_height_m,Canopy,baseline,standardized continuous,raw continuous,TRUE
+conditional_mean_canopy_bulk_density_kg_m3,Canopy,baseline,standardized continuous,raw continuous,TRUE
+hrrr_u10_mean_earth_ms,HRRR,baseline,standardized continuous,raw continuous,TRUE
+hrrr_v10_mean_earth_ms,HRRR,baseline,standardized continuous,raw continuous,TRUE
+hrrr_gust_max_ms,HRRR,baseline,standardized continuous,raw continuous,TRUE
+hrrr_temperature_2m_mean_c,HRRR,baseline,standardized continuous,raw continuous,TRUE
+hrrr_relative_humidity_2m_min_pct,HRRR,baseline,standardized continuous,raw continuous,TRUE
+evt_tree_fraction,EVT,core ecology,standardized composition coordinate,raw fraction,TRUE
+evt_shrub_fraction,EVT,core ecology,standardized composition coordinate,raw fraction,TRUE
+evt_perennial_herbaceous_fraction,EVT,core ecology,standardized composition coordinate,raw fraction,TRUE
+evt_annual_herbaceous_fraction,EVT,core ecology,standardized composition coordinate,raw fraction,TRUE
+evt_other_fraction,EVT,core ecology,omitted fixed reference part,raw fraction,TRUE

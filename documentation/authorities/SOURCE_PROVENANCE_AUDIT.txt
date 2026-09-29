@@ -1,0 +1,150 @@
+SOURCE_PROVENANCE_STATUS=PASS_WITH_UNRESOLVED_PROVENANCE
+
+AUDIT_REPOSITORY=C:\Projects\Wildfire_Research_Project
+AUDIT_BRANCH=main
+AUDIT_HEAD=ba565d6cae23d39f28ba5fd148d380c1ed24e343
+AUDIT_TRACKED_TREE_AT_START=CLEAN
+SCOPE=Sources that feed the frozen final Paper 1 predictor, response, and model artifacts; unused or superseded downloads are excluded.
+
+FEDS
+STATUS=VERIFIED_EXACT
+PRODUCT=Fire Event Data Suite Data Western US Archive, 2020 all-fire postprocessed object and 2020 pixel table; Brattain event fireID/fid 65371. The frozen response uses the extracted event-65371 states.
+VERSION=Zenodo dataset record version 1.0.0; data generated with FireAtlas/FEDS software release 1.2.1. These are distinct version concepts and must not be collapsed into one label.
+LOCAL_SOURCE=data/processed/feasibility/paper1_feds_validation/source/feds_western_us_2020_af_postprocessed.parquet; data/processed/feasibility/paper1_feds_validation/source/feds_western_us_2020_pixels.csv; final extracted state input data/processed/feasibility/paper1_feds_validation/extracted/feds_event_65371_states.parquet.
+ACQUISITION_SOURCE=Zenodo record 15261836, exact per-file content endpoints recorded in the retained record JSON.
+DOI_OR_URL=https://doi.org/10.5281/zenodo.15261836; https://zenodo.org/api/records/15261836/files/feds_western_us_2020_af_postprocessed.parquet/content; https://zenodo.org/api/records/15261836/files/feds_western_us_2020_pixels.csv/content
+CHECKSUM=all-fire parquet MD5 594e46cf2a5f5ab38878cf1265705a4a (official) and SHA256 5a5acc421469794099f884ef38e75c3f14720185463d817c474845ea9b71a578; pixel CSV MD5 36397b9784b6c064734a8d5673b636de (official) and SHA256 883240de29c2ce2b7f3f7b589d5b67db9a261fb972c7a8bc21c93eb283e34f64; extracted event states SHA256 b2d1fc4e3608d3f3d9879d3c9e2cdeb561451473176d762cc1f363c83fea3a91; retained Zenodo record JSON SHA256 2572c2369a4990d2d2725889fe08513a96418f5a0ecc4026db464fea516ceab6.
+EVIDENCE=data/processed/feasibility/paper1_feds_validation/source/zenodo_record_15261836.json records title, DOI, dataset version 1.0.0, software tag 1.2.1, filenames, sizes, official MD5 values, and content links; data/processed/feasibility/paper1_feds_validation/analysis/source_manifest.json binds the retained source files; documentation/PAPER1_BRATTAIN_FEDS_VALIDATION_GATE.md records event 65371 and source integrity; scripts/run_paper1_pr23.py:42,698-699 and scripts/run_paper1_pr31.py:31,109-110 directly bind the final predictor/response pipeline to event 65371 states.
+
+FBFM40
+STATUS=VERIFIED_EXACT
+PRODUCT=LANDFIRE Remap Scott and Burgan Fire Behavior Fuel Model (FBFM40) CONUS, product code LF2016_FBFM40_CONUS, band 1 of the delivered five-band PR23 AOI GeoTIFF.
+VERSION=LF 2016 Remap (LF 2016 2.0.0), circa-2016 ground conditions; source metadata publication date 2020-08-21. This is not LF 2020 Update.
+LOCAL_SOURCE=data/processed/propagation/paper1/pr23_response_free_predictors/source/LF2016_PR23_operational_baseline/j8c359d80f6244327b9327ec378f3430f.tif (band 1); archive data/processed/propagation/paper1/pr23_response_free_predictors/source/LF2016_PR23_operational_baseline.zip.
+ACQUISITION_SOURCE=LANDFIRE Product Service, USGS, targeted AOI job 821dce52-9104-4586-8abb-324b9dd7d649; request submitted through https://lfps.usgs.gov/api/job/submit and polled through /api/job/status. This was a Product Service AOI request, not a CONUS Full Extent Download or an undocumented Map Viewer export.
+DOI_OR_URL=https://lfps.usgs.gov/arcgis/rest/directories/arcgisjobs/landfireproductservice_gpserver/j8c359d80f6244327b9327ec378f3430f/scratch/j8c359d80f6244327b9327ec378f3430f.zip
+CHECKSUM=GeoTIFF SHA256 b0fe23189b239ca8828246891ffd7fb5b477b22aba3c8ad6dcf3fb39b5df92dd; ZIP SHA256 ee0621e074120eaab00cc580fdd1bf98c1d700d20dbf1693329544341db96129; acquisition receipt SHA256 1591c0246e370961e9fff8bb6b62c89e0c7d3ab4b6e808f7c0c0445148aa9f8e.
+EVIDENCE=data/processed/propagation/paper1/pr23_response_free_predictors/receipts/landfire_acquisition_receipt.json records the exact request, job, endpoints, completed layers, output URL, sizes, and hashes; source/LF2016_PR23_operational_baseline/LF2016_FBFM40_CONUS.xml records the exact product title, LF Remap edition, circa-2016 conditions, 30 m raster, and publication date; source/LF2016_PR23_operational_baseline/j8c359d80f6244327b9327ec378f3430f.tif.aux.xml identifies band 1; scripts/run_paper1_pr23.py uses this exact raster band for final FBFM40 fractions; the final PR23 manifest records the raster hash.
+
+CANOPY_COVER
+STATUS=VERIFIED_EXACT
+PRODUCT=LANDFIRE Remap Forest Canopy Cover (CC) CONUS, product code LF2016_CC_CONUS, band 2 of the delivered five-band PR23 AOI GeoTIFF; encoded unit percent.
+VERSION=LF 2016 Remap (LF 2016 2.0.0), circa-2016 ground conditions; source metadata publication date 2020-08-21.
+LOCAL_SOURCE=data/processed/propagation/paper1/pr23_response_free_predictors/source/LF2016_PR23_operational_baseline/j8c359d80f6244327b9327ec378f3430f.tif (band 2).
+ACQUISITION_SOURCE=Same USGS LANDFIRE Product Service AOI job and exact output archive as FBFM40; requested layer LF2016_CC.
+DOI_OR_URL=https://lfps.usgs.gov/arcgis/rest/directories/arcgisjobs/landfireproductservice_gpserver/j8c359d80f6244327b9327ec378f3430f/scratch/j8c359d80f6244327b9327ec378f3430f.zip
+CHECKSUM=Shared GeoTIFF SHA256 b0fe23189b239ca8828246891ffd7fb5b477b22aba3c8ad6dcf3fb39b5df92dd; shared ZIP SHA256 ee0621e074120eaab00cc580fdd1bf98c1d700d20dbf1693329544341db96129.
+EVIDENCE=landfire_acquisition_receipt.json; LF2016_CC_CONUS.xml; j8c359d80f6244327b9327ec378f3430f.tif.aux.xml; scripts/run_paper1_pr23.py:574-579; final PR23 manifest source hash.
+
+CANOPY_HEIGHT
+STATUS=VERIFIED_EXACT
+PRODUCT=LANDFIRE Remap Forest Canopy Height (CH) CONUS, product code LF2016_CH_CONUS, band 3 of the delivered five-band PR23 AOI GeoTIFF; encoded unit meters times 10 and decoded with scale 0.1.
+VERSION=LF 2016 Remap (LF 2016 2.0.0), circa-2016 ground conditions; source metadata publication date 2020-08-21.
+LOCAL_SOURCE=data/processed/propagation/paper1/pr23_response_free_predictors/source/LF2016_PR23_operational_baseline/j8c359d80f6244327b9327ec378f3430f.tif (band 3).
+ACQUISITION_SOURCE=Same USGS LANDFIRE Product Service AOI job and archive; requested layer LF2016_CH.
+DOI_OR_URL=https://lfps.usgs.gov/arcgis/rest/directories/arcgisjobs/landfireproductservice_gpserver/j8c359d80f6244327b9327ec378f3430f/scratch/j8c359d80f6244327b9327ec378f3430f.zip
+CHECKSUM=Shared GeoTIFF SHA256 b0fe23189b239ca8828246891ffd7fb5b477b22aba3c8ad6dcf3fb39b5df92dd; shared ZIP SHA256 ee0621e074120eaab00cc580fdd1bf98c1d700d20dbf1693329544341db96129.
+EVIDENCE=landfire_acquisition_receipt.json; LF2016_CH_CONUS.xml; j8c359d80f6244327b9327ec378f3430f.tif.aux.xml; scripts/run_paper1_pr23.py:581-583; final PR23 manifest source hash.
+
+CANOPY_BASE_HEIGHT
+STATUS=VERIFIED_EXACT
+PRODUCT=LANDFIRE Remap Forest Canopy Base Height (CBH) CONUS, product code LF2016_CBH_CONUS, band 4 of the delivered five-band PR23 AOI GeoTIFF; encoded unit meters times 10 and decoded with scale 0.1.
+VERSION=LF 2016 Remap (LF 2016 2.0.0), circa-2016 ground conditions; source metadata publication date 2020-08-21.
+LOCAL_SOURCE=data/processed/propagation/paper1/pr23_response_free_predictors/source/LF2016_PR23_operational_baseline/j8c359d80f6244327b9327ec378f3430f.tif (band 4).
+ACQUISITION_SOURCE=Same USGS LANDFIRE Product Service AOI job and archive; requested layer LF2016_CBH.
+DOI_OR_URL=https://lfps.usgs.gov/arcgis/rest/directories/arcgisjobs/landfireproductservice_gpserver/j8c359d80f6244327b9327ec378f3430f/scratch/j8c359d80f6244327b9327ec378f3430f.zip
+CHECKSUM=Shared GeoTIFF SHA256 b0fe23189b239ca8828246891ffd7fb5b477b22aba3c8ad6dcf3fb39b5df92dd; shared ZIP SHA256 ee0621e074120eaab00cc580fdd1bf98c1d700d20dbf1693329544341db96129.
+EVIDENCE=landfire_acquisition_receipt.json; LF2016_CBH_CONUS.xml; j8c359d80f6244327b9327ec378f3430f.tif.aux.xml; scripts/run_paper1_pr23.py:581-583; final PR23 manifest source hash.
+
+CANOPY_BULK_DENSITY
+STATUS=VERIFIED_EXACT
+PRODUCT=LANDFIRE Remap Forest Canopy Bulk Density (CBD) CONUS, product code LF2016_CBD_CONUS, band 5 of the delivered five-band PR23 AOI GeoTIFF; encoded unit kg/m3 times 100 and decoded with scale 0.01.
+VERSION=LF 2016 Remap (LF 2016 2.0.0), circa-2016 ground conditions; source metadata publication date 2020-08-21.
+LOCAL_SOURCE=data/processed/propagation/paper1/pr23_response_free_predictors/source/LF2016_PR23_operational_baseline/j8c359d80f6244327b9327ec378f3430f.tif (band 5).
+ACQUISITION_SOURCE=Same USGS LANDFIRE Product Service AOI job and archive; requested layer LF2016_CBD.
+DOI_OR_URL=https://lfps.usgs.gov/arcgis/rest/directories/arcgisjobs/landfireproductservice_gpserver/j8c359d80f6244327b9327ec378f3430f/scratch/j8c359d80f6244327b9327ec378f3430f.zip
+CHECKSUM=Shared GeoTIFF SHA256 b0fe23189b239ca8828246891ffd7fb5b477b22aba3c8ad6dcf3fb39b5df92dd; shared ZIP SHA256 ee0621e074120eaab00cc580fdd1bf98c1d700d20dbf1693329544341db96129.
+EVIDENCE=landfire_acquisition_receipt.json; LF2016_CBD_CONUS.xml; j8c359d80f6244327b9327ec378f3430f.tif.aux.xml; scripts/run_paper1_pr23.py:581-583; final PR23 manifest source hash.
+
+CANOPY_APPLICABILITY
+STATUS=VERIFIED_EXACT
+PRODUCT=Derived predictor, not a separate LANDFIRE product: within-response-cell fraction of source area having valid, finite LF2016 CC greater than zero.
+VERSION=Derivation tied to LF 2016 Remap CC and PR23 implementation.
+LOCAL_SOURCE=Derived from band 2 of data/processed/propagation/paper1/pr23_response_free_predictors/source/LF2016_PR23_operational_baseline/j8c359d80f6244327b9327ec378f3430f.tif.
+ACQUISITION_SOURCE=No separate acquisition.
+DOI_OR_URL=NOT_APPLICABLE
+CHECKSUM=Input GeoTIFF SHA256 b0fe23189b239ca8828246891ffd7fb5b477b22aba3c8ad6dcf3fb39b5df92dd; final 1 km PR23 table SHA256 46c7c1cf208dace65a9c19e3f4b490fe9fa0592ad832856f44412556a0b5d2a5; final 2 km PR23 table SHA256 f33d54d8b2a7a824b75d0d9bfd1b1153af535f30f03e5863168ad5e8fbc1686e.
+EVIDENCE=scripts/run_paper1_pr23.py:249-290 defines mask validity as CC valid, finite, and greater than zero; scripts/run_paper1_pr23.py:574-583 sets canopy_applicable_fraction from that masked valid fraction and conditions CC/CH/CBH/CBD on the same domain. documentation/PAPER1_CANOPY_NONAPPLICABILITY_MODEL_AUTHORITY.md governs later structural-zero model coding without changing this source-domain derivation.
+
+EVT
+STATUS=VERIFIED_EXACT
+PRODUCT=LANDFIRE Remap 2016 Existing Vegetation Type (EVT) CONUS, 30 m categorical raster.
+VERSION=LF 2016 Remap, LF 2016 2.0.0; circa-2016 represented conditions; metadata publication date 2020-07-31.
+LOCAL_SOURCE=data/raw/landfire/lf2016_remap/conus/extracted/evt/LF2016_EVT_CONUS/Tif/LF2016_EVT_CONUS.tif; archive data/raw/landfire/lf2016_remap/conus/downloads/LF2016_EVT_CONUS.zip.
+ACQUISITION_SOURCE=Repository records a completed manual acquisition of the full-CONUS LANDFIRE archive. The exact original UI/endpoint and download URL were not retained, so it cannot be authenticated as Full Extent Downloads versus another LANDFIRE delivery interface.
+DOI_OR_URL=UNRESOLVED_EXACT_ACQUISITION_URL
+CHECKSUM=GeoTIFF SHA256 4df21de41e193b8b8f074edd6ccac0336a435c45a6f4c62874e0fefab838c53c; ZIP SHA256 95e8c5ff02a1449cb3fe7ad743a64cdd84c71394d9358411e765dcca8ee75b02 and acquisition-control MD5 7c6c0cfebc47ba3d7302c79219f44c2e; metadata XML SHA256 92c1b678550180ce6b83ed88b88fb432c0b195da8d441efcc5061cf2d8cc27a4.
+EVIDENCE=data/raw/landfire/lf2016_remap/conus/extracted/evt/LF2016_EVT_CONUS/General_Metadata/LF2016_EVT_CONUS.xml records exact title, edition, date, and raster identity; README_LF.txt:37 maps LF 2016 Remap to LF 2016 2.0.0; documentation/paper1_landfire_acquisition_decision.md:19,27-39 records the manual acquisition and expected MD5; scripts/run_paper1_pr23.py uses this exact raster as sources['evt']; final PR23 manifest records the raster SHA256.
+
+HRRR
+STATUS=VERIFIED_PRODUCT_VERSION_UNRESOLVED
+PRODUCT=NOAA/NCEP High-Resolution Rapid Refresh CONUS surface forecast files, object convention hrrr.YYYYMMDD/conus/hrrr.tCCz.wrfsfcfLL.grib2. The final baseline uses five fields reconstructed from retained selected messages: 10 m U and V wind rotated from grid-relative to earth-relative and temporally averaged, surface gust maximum, 2 m temperature mean, and 2 m relative-humidity minimum.
+VERSION=The repository repeatedly labels the September 2020 product HRRRv3 and records official operational-era documentation, but the retained GRIB/message metadata has no explicit HRRR release-number field. HRRRv3 is therefore historically supported but not directly authenticated from the scientific input bytes; do not present the version as embedded file metadata.
+LOCAL_SOURCE=data/processed/feasibility/paper1_hrrr_primary/source_messages/hrrr_YYYYMMDDCC_fLL_FIELD.grib2 (1,582 retained selected messages across seven acquired fields and 226 source objects); final PR23 uses the extracted_values NPZ files referenced by preflight_message_inventory.csv for u10, v10, gust_surface, temperature_2m, and relative_humidity_2m only.
+ACQUISITION_SOURCE=NOAA Open Data S3 archive noaa-hrrr-bdp-pds; index-guided HTTP byte-range retrieval from exact official GRIB objects and .idx files.
+DOI_OR_URL=https://noaa-hrrr-bdp-pds.s3.amazonaws.com; exact 226 object URLs and index URLs are in documentation/PAPER1_HRRR_SELECTED_OBJECTS.csv.
+CHECKSUM=Per-message SHA256 values are recorded for all 1,582 retained messages in message_acquisition_receipt.csv; that receipt SHA256 is c5904136eed393071735cc60f1a7f185d0d5064c9e87dc3f67841813704d610a. Selected-object ledger SHA256 cbd3522c7a7ae76c457afd5bbaa316785dd1184d5098c42f92e584ca5c451754; decoded metadata SHA256 1954077a04befb8941da4ef8af19d488ee049d00b30b02f67f4edcf8a2422487; interval aggregate summary SHA256 d41292683affd3dd75acd58f8cf07c568ac3d7061fb327456a18069381fe7e60.
+EVIDENCE=documentation/PAPER1_HRRR_SELECTED_OBJECTS.csv records interval, cutoff, initialization, lead, valid time, object key, exact URLs, archive timestamps, ETags, sizes, selected message numbers, byte ranges, and fields; message_acquisition_receipt.csv binds every local message to its source object/range/hash; decoded_message_metadata.csv authenticates grid, field, level, units, dimensions, forecast valid time, and source hash but contains no release version; documentation/PAPER1_HRRR_PRIMARY_WEATHER_QC.md records 226 objects, 1,582 messages, source host, and selected cycles; documentation/PAPER1_HRRR_FORECAST_REALIGNMENT_AUDIT.csv records all 16 effective-t0 choices. Cycle rule: latest hourly initialization for which the complete required bracketing lead set was archived no later than effective t0; selected initializations range 2020-09-08T09Z through 2020-09-18T19Z with f01-f17 as needed. scripts/run_paper1_pr23.py:412-465 reconstructs only the five final fields from those retained extracted values.
+
+TERRAIN_ELEVATION
+STATUS=VERIFIED_PRODUCT_VERSION_UNRESOLVED
+PRODUCT=USGS 3D Elevation Program (3DEP) 1/3-arc-second seamless bare-earth DEM, tile n43w121.
+VERSION=Exact downloaded tile is authenticated, but no edition/vintage/year is retained beyond the official /current/ hierarchy as accessed 2026-08-05; do not assign a historical NED/3DEP release year without additional evidence.
+LOCAL_SOURCE=data/raw/terrain/3dep_13arcsec/downloads/USGS_13_n43w121.tif.
+ACQUISITION_SOURCE=Direct official USGS The National Map staged-products URL.
+DOI_OR_URL=https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/current/n43w121/USGS_13_n43w121.tif
+CHECKSUM=SHA256 5bfcc51891250a23d6402edcfb872dec168862e74e37a103c1691522dc4ece69; MD5 d0e16d0ea203a7560a1409a396858ec9; 384,100,646 bytes. Receipt SHA256 3bcbc74697e49ad11a427c2ff8081dd8f4ac31bac2da67163f924b646f6f039f.
+EVIDENCE=data/raw/terrain/3dep_13arcsec/receipts/USGS_13_n43w121.tif.receipt.json records provider/product family, official/final URL, tile, access time, size, checksums, EPSG:4269, 1/3-arc-second pixel spacing, bounds, NoData, and PASS; final PR23 manifest repeats the exact source path/hash. scripts/run_paper1_pr23.py derives target elevation, 10 m projected Horn slope/gradients, source-target elevation difference, uphill alignment, and wind-slope alignment from this DEM. documentation/PAPER1_TERRAIN_SOURCE_AUTHORITY_AMENDMENT.md governs the completed-t0 active-front/perimeter source point. No LANDFIRE elevation raster feeds the final pipeline.
+
+SCIKIT_LEARN
+STATUS=VERIFIED_EXACT
+PRODUCT=scikit-learn implementations used by the frozen model pipeline: sklearn.linear_model.LogisticRegression, sklearn.ensemble.RandomForestClassifier, and sklearn.metrics probability metrics.
+VERSION=1.9.0 under CPython 3.12.13.
+LOCAL_SOURCE=Activated Conda environment C:/Users/cjimi/miniconda3/envs/wildfire; executable C:/Users/cjimi/miniconda3/envs/wildfire/python.exe.
+ACQUISITION_SOURCE=Environment package provenance; installation channel/build is not pinned by environment.yml, but runtime version is independently recorded and enforced.
+DOI_OR_URL=https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html; https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
+CHECKSUM=documentation/PAPER1_G07_ENVIRONMENT_PREFLIGHT.csv SHA256 c23b2b33d09d51a8b9f24a284f876318eb289c64e2c9a7e91e25a473a46ad858; model source src/paper1_pr34_modeling.py SHA256 21d9a5cdae22ea8f2df848c5f02ad2101c6773d80ca4463f3365fc156091395c.
+EVIDENCE=documentation/PAPER1_G07_ENVIRONMENT_PREFLIGHT.csv directly records Python 3.12.13, NumPy 2.5.1, pandas 3.0.3, SciPy 1.18.0, scikit-learn 1.9.0, platform, and executable; documentation/PAPER1_MODEL_FORMULATION_SPEC.md locks those versions and exact estimators; src/paper1_pr34_modeling.py:19-22,273-275 and src/paper1_g07_runtime.py:33-35,947-956 instantiate the governed estimators and metrics; production execution manifests record environment_identity python-3.12.13 and a content-derived package-lock identity.
+
+OTHER_CITABLE_SOFTWARE
+STATUS=VERIFIED_EXACT
+PRODUCT=Core numerical/model-data stack authenticated for final execution: CPython, NumPy, SciPy, pandas, and PyArrow. Statsmodels/Patsy were added later for the governed fractional-logit path; cite them only if that sensitivity is reported. Geospatial preparation used Rasterio/GDAL, GeoPandas, Shapely, and PyProj, but exact package versions at PR23 generation are not preserved in the PR23 manifest.
+VERSION=CPython 3.12.13; NumPy 2.5.1; SciPy 1.18.0; pandas 3.0.3; PyArrow 23.0.1; later accepted fractional path records statsmodels 0.14.6 and Patsy 1.0.2. Exact PR23-generation versions of Rasterio/GDAL, GeoPandas, Shapely, and PyProj are UNRESOLVED.
+LOCAL_SOURCE=wildfire Conda environment; environment.yml names dependencies but does not pin builds; governed environment QC/acceptance files record runtime versions.
+ACQUISITION_SOURCE=Conda/pip environment provenance; exact channel/build provenance is not fully locked in environment.yml.
+DOI_OR_URL=https://www.python.org/; https://numpy.org/; https://scipy.org/; https://pandas.pydata.org/; https://arrow.apache.org/docs/python/; https://www.statsmodels.org/
+CHECKSUM=documentation/PAPER1_G07_ENVIRONMENT_PREFLIGHT.csv SHA256 c23b2b33d09d51a8b9f24a284f876318eb289c64e2c9a7e91e25a473a46ad858; documentation/PAPER1_MODEL_FORMULATION_SPEC.md SHA256 b21cb6bd0bf914826c7495824f3d1f0e7d6572f676b9dd361a23a95b801c0fc6.
+EVIDENCE=documentation/PAPER1_G07_ENVIRONMENT_PREFLIGHT.csv; documentation/PAPER1_G08_ENVIRONMENT_QC.csv; documentation/PAPER1_G08_ENVIRONMENT_REMEDIATION_2_ENVIRONMENT_QC.csv; documentation/PAPER1_SOL_G08_V2_CORRECTION_1_FINAL_ACCEPTANCE.md; scripts/run_paper1_pr34_models.py:28 enforces the five core model-stack versions. PR23 manifest records only Python 3.12.13 and platform, so later/current geospatial package observations cannot be retroactively asserted as exact PR23-generation versions.
+
+MANUSCRIPT_SOURCE_CORRECTIONS=
+1. Replace any statement that final Paper 1 terrain/elevation came from LANDFIRE with USGS 3DEP 1/3-arc-second seamless bare-earth DEM tile USGS_13_n43w121.tif. LANDFIRE terrain language in documentation/original_study_summary.md and documentation/decision_log.md is historical/planning context, not final-pipeline provenance.
+2. Name the operational fuel/canopy products as LF 2016 Remap (LF 2016 2.0.0), product codes LF2016_FBFM40, LF2016_CC, LF2016_CH, LF2016_CBH, and LF2016_CBD. Do not call them LF 2020 merely because metadata were published in 2020 or discuss 2020-capable fuels functionality.
+3. State that canopy applicability is derived from positive valid LF2016 CC support within each response cell; it is not a separately downloaded LANDFIRE layer.
+4. Name EVT as LANDFIRE Remap 2016 Existing Vegetation Type, LF 2016 2.0.0, and disclose circa-2016 represented conditions. Do not attribute EVT to the AOI Product Service job used for FBFM40/canopy; EVT came from the separately retained full-CONUS archive.
+5. For FEDS, distinguish Zenodo archive record version 1.0.0 from FireAtlas/FEDS software release 1.2.1. A concise accurate description is: Fire Event Data Suite Data Western US Archive, 2020 files, generated with FireAtlas/FEDS v1.2.1, Brattain event 65371, DOI 10.5281/zenodo.15261836.
+6. The retained HRRR source is exactly the NOAA Open Data noaa-hrrr-bdp-pds archive and exact object/message bytes. Phrase HRRRv3 as the operational-era version assignment supported by NOAA documentation, not as a release field embedded in the retained GRIB metadata.
+7. Do not assign a 3DEP release year or call the terrain source NED; only the exact current-hierarchy tile acquired on 2026-08-05 is authenticated.
+8. Cite scikit-learn 1.9.0 for LogisticRegression, RandomForestClassifier, and metrics; the frozen runtime is CPython 3.12.13 with NumPy 2.5.1, SciPy 1.18.0, and pandas 3.0.3. environment.yml alone is not a package lock.
+
+UNRESOLVED_PROVENANCE=
+1. HRRR release number: the repository documents and historically supports HRRRv3, but the retained GRIB/message metadata does not encode an explicit model release/version field. Exact NOAA archive product/object identity is verified.
+2. USGS 3DEP tile edition/vintage/year: exact official file, URL, tile, resolution, and hash are verified, but /current/ does not preserve a version year in the retained receipt.
+3. LF2016 EVT acquisition endpoint: exact archive/raster/product/version and hashes are verified, but the original download URL and UI/method (Full Extent Downloads versus another LANDFIRE interface) were not retained.
+4. Exact package builds/channels and PR23-generation versions of Rasterio/GDAL, GeoPandas, Shapely, and PyProj are not authenticated by a frozen PR23 package lock. This limits byte-for-byte environment citation, not identification of the external scientific source rasters or the core model stack.
+
+FINAL_STATUS=PASS_WITH_UNRESOLVED_PROVENANCE
+FINAL_STATUS_REASON=Every scientifically material external input is identified to an exact local file or exact NOAA object/message set and is tied to the frozen final pipeline with hashes. The unresolved items concern release/vintage labels, one historical acquisition endpoint, and non-core geospatial package versions; guessing would overstate the preserved provenance.
+LIVE_REPOSITORY_MODIFIED=NO
+SCIENTIFIC_HANDLERS_DISPATCHED=0
+MODELS_FIT=0
+PREDICTIONS_GENERATED=0

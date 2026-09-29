@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: If you use this research compendium, please cite it using the metadata below.
+title: Ecological compression of vegetation information in wildfire spread prediction
+type: dataset
+authors:
+  - family-names: Ko
+    given-names: Christopher
+    affiliation: Portola High School, Irvine, CA, USA
+  - family-names: Ko
+    given-names: Hannah
+    affiliation: Vanderbilt University, Nashville, TN, USA
+version: 1.0.0
+date-released: 2026-09-27
+abstract: >-
+  Reproducibility compendium for a single-fire retrospective analysis of conditional
+  next-interval propagation in the 2020 Brattain Fire.
